@@ -558,6 +558,11 @@
     </path>
 
     <path name="speaker">
+        <ctl name="RX3 MIX1 INP1" value="RX1" />
+        <ctl name="SPK DAC Switch" value="1" />
+    </path>
+
+    <path name="wsa-speaker">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
         <ctl name="RX1 Digital Volume" value="84" />
@@ -626,6 +631,10 @@
 
     <path name="voice-speaker">
         <path name="speaker" />
+    </path>
+
+    <path name="wsa-voice-speaker">
+        <path name="wsa-speaker" />
     </path>
 
     <path name="voice-speaker-mic">
