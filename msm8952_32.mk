@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     device/qcom/msm8952_32/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/qcom/msm8952_32/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
     device/qcom/msm8952_32/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
+    device/qcom/msm8952_32/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
     device/qcom/msm8952_32/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
     device/qcom/msm8952_32/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml
 
@@ -108,14 +109,18 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
+    frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:system/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 #fstab.qcom
 PRODUCT_PACKAGES += fstab.qcom
 
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
-    libqcompostprocbundle
+    libqcompostprocbundle \
+    libqcomvoiceprocessing
 
 #OEM Services library
 PRODUCT_PACKAGES += oem-services
