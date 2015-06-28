@@ -82,10 +82,10 @@ on property:ro.config.zram=true
 on init
    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
-service qfp-daemon /system/bin/qfp-daemon
-   class late_start
-   user system
-   group system drmrpc
+#service qfp-daemon /system/bin/qfp-daemon
+#   class late_start
+#   user system
+#   group system drmrpc
 
 service qfp-daemon /system/bin/qfp-daemon
    class late_start
